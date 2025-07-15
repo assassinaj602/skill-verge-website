@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeftIcon, ClockIcon, UserIcon, StarIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 import { skillCourses, academicCourses } from '../data';
-import type { Course } from '../types';
 
 const CourseDetail: React.FC = () => {
   const { courseId } = useParams<{ courseId: string }>();
