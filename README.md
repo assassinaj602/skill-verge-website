@@ -1,69 +1,152 @@
-# React + TypeScript + Vite
+# 🎓 Skill Verge - Educational Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive educational website built with React, TypeScript, and Tailwind CSS. Skill Verge offers both technical skill courses and academic programs to empower students for their future careers.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🏠 Modern Homepage** - Hero section with animated elements and course showcases
+- **📚 Course Management** - Individual course pages with detailed information
+- **👨‍🏫 Instructor Profiles** - Comprehensive instructor detail pages with achievements
+- **📱 Responsive Design** - Mobile-first design that works on all devices
+- **🎨 Enhanced Animations** - Smooth hover effects, transitions, and micro-interactions
+- **🧭 Smart Navigation** - Automatic scroll-to-top functionality
+- **⚡ Fast Performance** - Built with Vite for lightning-fast development and builds
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Visit the live website: [Skill Verge](https://assassinaj602.github.io/skill-verge-website/)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Frontend Framework:** React 19.1.0
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v3.4.17
+- **Build Tool:** Vite 7.0.4
+- **Routing:** React Router DOM v7.6.3
+- **Icons:** Heroicons & Lucide React
+- **Development:** ESLint, PostCSS, Autoprefixer
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/assassinaj602/skill-verge-website.git
+   cd skill-verge-website
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser and visit:** `http://localhost:5173`
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── CourseCard.tsx
+│   ├── InstructorCard.tsx
+│   ├── Navbar.tsx
+│   └── Footer.tsx
+├── pages/              # Page components
+│   ├── Home.tsx
+│   ├── About.tsx
+│   ├── Courses.tsx
+│   ├── Faculty.tsx
+│   ├── CourseDetail.tsx
+│   └── InstructorDetail.tsx
+├── hooks/              # Custom React hooks
+│   └── useScrollToTop.ts
+├── data/               # Static data and content
+│   └── index.ts
+├── types/              # TypeScript type definitions
+│   └── index.ts
+└── assets/             # Images and static files
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎯 Available Scripts
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📋 Courses Offered
+
+### 💻 Technical Skills
+- **Python Programming** - From basics to advanced concepts
+- **Web Development** - Modern web technologies with AI tools
+- **Flutter Development** - Cross-platform mobile app development
+- **Prompt Engineering** - AI interaction and optimization
+
+### 🎓 Academic Programs
+- **O/A Level Computer Science** - Cambridge curriculum
+- **FSC Pre-Engineering** - Mathematics and Physics focus
+- **ICS (Computer Science)** - Intermediate computer science
+- **MS Office Suite** - Professional productivity tools
+
+## 👥 Meet Our Faculty
+
+- **Muhammad Assad Ullah** - Lead Instructor (Python, Web Dev, Flutter, AI)
+- **Naseer Ahmad** - Senior Instructor (Academic Programs)
+- **Hammas Ali** - Technical Instructor (Programming & Development)
+- **Zain Ul Abideen** - Academic Coordinator (O/A Levels)
+
+## 🌟 Key Features
+
+### 🎨 Enhanced User Experience
+- Smooth animations and transitions
+- Interactive hover effects
+- Responsive design for all devices
+- Intuitive navigation with scroll-to-top
+
+### 🔧 Technical Highlights
+- Type-safe development with TypeScript
+- Component-based architecture
+- Modern CSS with Tailwind utilities
+- Optimized build process with Vite
+
+### 📱 Pages & Functionality
+- **Home:** Welcome section with featured courses
+- **About:** Mission and vision of Skill Verge
+- **Faculty:** Instructor profiles with detailed backgrounds
+- **Courses:** Complete course catalog with filtering
+- **Course Details:** Individual course information pages
+- **Instructor Details:** Comprehensive instructor profiles
+
+## 🚀 Deployment
+
+The project is ready for deployment on platforms like:
+- **Vercel** (Recommended)
+- **Netlify**
+- **GitHub Pages**
+- **Firebase Hosting**
+
+## 📄 License
+
+This project is created by **Muhammad Assad Ullah** for educational purposes.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+**Muhammad Assad Ullah**
+- GitHub: [@assassinaj602](https://github.com/assassinaj602)
+- Email: [asadullahaj602@gmail.com]
+
+---
+
+⭐ **Star this repo if you found it helpful!**
