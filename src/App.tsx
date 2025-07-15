@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/skill-verge-website">
       <div className="App">
         <Navbar />
         <main>
