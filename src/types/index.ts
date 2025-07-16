@@ -22,11 +22,15 @@ export interface Instructor {
   bio: string;
   experience: string;
   email?: string;
-  education?: string;
+  education?: string | string[];
   linkedin?: string;
   github?: string;
-  achievements?: string[];
   fullBio?: string;
+  notableProjects?: {
+    name: string;
+    url: string;
+    description?: string;
+  }[];
 }
 
 export interface Testimonial {

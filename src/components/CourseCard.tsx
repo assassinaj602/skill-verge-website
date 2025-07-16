@@ -15,7 +15,7 @@ interface CourseCardProps {
 
 const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group card-hover">
+    <Link to={`/course/${course.id}`} className="block bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group card-hover focus:outline-none focus:ring-2 focus:ring-primary-500">
       <div className="p-6">
         {/* Header */}
         <div className="flex items-start justify-between mb-4">
@@ -77,7 +77,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         </div>
 
         {/* Course Details */}
-        <div className="space-y-3 mb-6">
+        <div className="space-y-3 mb-2">
           <div className="flex items-center space-x-3">
             <ClockIcon className="h-4 w-4 text-gray-500" />
             <span className="text-sm text-gray-600">Duration: {course.duration}</span>
@@ -95,16 +95,8 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             <span className="text-sm text-gray-600">Prerequisites: {course.prerequisites}</span>
           </div>
         </div>
-
-        {/* CTA Button */}
-        <Link
-          to={`/course/${course.id}`}
-          className="w-full inline-block bg-gradient-primary text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300 group-hover:scale-105 text-center btn-animate ripple-effect"
-        >
-          Learn More
-        </Link>
       </div>
-    </div>
+    </Link>
   );
 };
 

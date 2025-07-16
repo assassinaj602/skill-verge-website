@@ -81,19 +81,29 @@ const Footer: React.FC = () => {
             <h3 className="font-heading font-semibold text-lg">Popular Courses</h3>
             <ul className="space-y-2">
               <li>
-                <span className="text-gray-300">Python Programming</span>
+                <Link to="/course/python" className="text-gray-300 hover:text-white transition-colors">
+                  Python Programming
+                </Link>
               </li>
               <li>
-                <span className="text-gray-300">Web Development</span>
+                <Link to="/course/web-dev" className="text-gray-300 hover:text-white transition-colors">
+                  Web Development
+                </Link>
               </li>
               <li>
-                <span className="text-gray-300">Flutter Development</span>
+                <Link to="/course/flutter" className="text-gray-300 hover:text-white transition-colors">
+                  Flutter Development
+                </Link>
               </li>
               <li>
-                <span className="text-gray-300">O/A Level Computer Science</span>
+                <Link to="/course/o-level-cs" className="text-gray-300 hover:text-white transition-colors">
+                  O/A Level Computer Science
+                </Link>
               </li>
               <li>
-                <span className="text-gray-300">MS Office</span>
+                <Link to="/course/ms-office" className="text-gray-300 hover:text-white transition-colors">
+                  MS Office
+                </Link>
               </li>
             </ul>
           </div>
@@ -122,6 +132,9 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
               © 2025 Skill Verge. All rights reserved.
+            </p>
+            <p className="text-gray-400 text-sm mt-2 md:mt-0">
+              This website is created by <span className="font-semibold text-primary-400">Muhammad Assad Ullah</span>
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">

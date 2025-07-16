@@ -1,4 +1,8 @@
 import type { Course, Instructor, Testimonial, AcademicFee } from '../types';
+import zainImg from '../assets/zain.jpg';
+import naseerImg from '../assets/naseer.jpg';
+import assadImg from '../assets/assad.jpg';
+import hammasImg from '../assets/hammas.jpg';
 
 export const instructors: Instructor[] = [
   {
@@ -6,13 +10,12 @@ export const instructors: Instructor[] = [
     name: 'Zain Tahir',
     title: 'Senior Computer Science Instructor',
     specializations: ['O/A Level Computer Science', 'Python Programming', 'Canva Design'],
-    avatar: require('../assets/zain.jpg'),
+    avatar: zainImg,
     bio: 'Expert in O/A Level Computer Science with extensive experience in Python programming and digital design using Canva.',
     experience: '5+ years teaching experience',
     email: 'zain@skillverge.com',
     education: 'BS Computer Science, University of Engineering & Technology Taxila',
     linkedin: 'https://linkedin.com/in/zaintahir',
-    achievements: ['Top CS Teacher 2023', 'Python Certified Developer', 'Canva Pro Designer'],
     fullBio: 'Zain Tahir is a passionate computer science educator with over 5 years of teaching experience. He specializes in O/A Level Computer Science and has helped hundreds of students achieve excellent results. His expertise in Python programming and Canva design makes him a versatile instructor who can teach both academic and practical skills.',
   },
   {
@@ -20,43 +23,69 @@ export const instructors: Instructor[] = [
     name: 'Saad Naseer',
     title: 'MS Office Specialist',
     specializations: ['MS Office Suite', 'Excel Advanced', 'PowerPoint', 'Data Analysis'],
-    avatar: require('../assets/naseer.jpg'),
+    avatar: naseerImg,
     bio: 'Microsoft Office specialist with comprehensive knowledge of all Office applications and advanced data analysis techniques.',
     experience: '4+ years professional experience',
     email: 'saad@skillverge.com',
     education: 'BS Business Administration, University of Engineering & Technology Taxila',
     linkedin: 'https://linkedin.com/in/saadnaseer',
-    achievements: ['Microsoft Office Certified', 'Excel Expert', 'Data Analysis Specialist'],
     fullBio: 'Saad Naseer is a Microsoft Office specialist with extensive experience in business applications. He has worked with numerous organizations to improve their productivity through efficient use of Office tools. His expertise in Excel and data analysis makes him the go-to instructor for professional Office skills.',
   },
   {
     id: '3',
     name: 'Muhammad Assad Ullah',
-    title: 'Frontend Developer & ICS Instructor',
+    title: 'App, Web Developer & ICS Instructor',
     specializations: ['Frontend Development', 'Prompt Engineering', 'ICS Computer Science', 'React.js', 'Flutter', 'Mobile App Development'],
-    avatar: require('../assets/assad.jpg'),
+    avatar: assadImg,
     bio: 'Full-stack developer specializing in frontend technologies and modern web development practices, also teaching ICS Computer Science.',
-    experience: '6+ years development experience',
-    email: 'assad@skillverge.com',
-    education: 'BS Computer Science, University of Engineering & Technology Taxila',
-    linkedin: 'https://linkedin.com/in/assadullah',
-    github: 'https://github.com/assadullah',
-    achievements: ['React Developer Certified', 'Flutter Expert', 'Web Development Mentor'],
-    fullBio: 'Muhammad Assad Ullah is a skilled full-stack developer with expertise in modern web technologies and mobile app development. He specializes in React.js and Flutter development, and has extensive experience in prompt engineering. His passion for teaching has led him to become an excellent ICS Computer Science instructor, helping students bridge the gap between academic knowledge and practical skills.',
+    experience: '3+ years development and teaching experience',
+    email: 'asadullahaj602@gmail.com',
+    education: [
+      'Bachelors in Computer Science, University of Engineering and Technology Taxila (2023-2027)',
+      'ICS, Punjab College Muzaffargarh (2021-2023), 3rd Position in DGK Board'
+    ],
+    linkedin: 'https://www.linkedin.com/in/muhammad-assadullah/',
+    github: 'https://github.com/assassinaj602',
+    notableProjects: [
+      {
+        name: 'Study Buddy AI',
+        url: 'https://github.com/assassinaj602/study-buddy-ai',
+        description: 'Multi-modal AI academic assistant with file processing capabilities.'
+      },
+      {
+        name: 'HackShield Academy',
+        url: 'https://github.com/assassinaj602/hackshield-academy',
+        description: 'Interactive cybersecurity education platform with phishing detection games, password builders, and security quizzes.'
+      },
+      {
+        name: 'UrbanTrim',
+        url: 'https://github.com/assassinaj602/urbantrim',
+        description: 'UrbanTrim project.'
+      }
+    ],
+    fullBio: `
+<strong>Introduction:</strong><br/>
+Muhammad Assad Ullah is a skilled full-stack <span class="font-bold text-primary-600">Flutter</span> <span class="font-bold text-primary-600">app and web developer</span> with expertise in modern web technologies and mobile app development. He specializes in <span class="font-bold text-primary-600">Flutter development</span> and <span class="font-bold text-primary-600">frontend web development</span>, and has extensive experience in prompt engineering. His passion for teaching has led him to become an excellent ICS Computer Science instructor, helping students bridge the gap between academic knowledge and practical skills.<br/><br/>
+<strong>Teaching Philosophy:</strong><br/>
+I use AI in my teachings to make learning faster and modern, ensuring students are prepared for the future of technology.<br/><br/>
+<strong>Fun Facts & Interests:</strong><br/>
+I love coding, anime, movies, reading (mangas, novels), video games, and sports.<br/><br/>
+<strong>Favorite Quote:</strong><br/>
+"Life has no CTRL + Z"
+`,
   },
   {
     id: '4',
     name: 'Hammas',
     title: 'Flutter Developer & FSC Instructor',
     specializations: ['Flutter Development', 'Mobile App Development', 'FSC Subjects', 'Dart Programming'],
-    avatar: require('../assets/hammas.jpg'),
+    avatar: hammasImg,
     bio: 'Mobile app developer with expertise in Flutter framework and comprehensive knowledge of FSC level subjects.',
     experience: '3+ years development experience',
     email: 'hammas@skillverge.com',
     education: 'BS Computer Science, University of Engineering & Technology Taxila',
     linkedin: 'https://linkedin.com/in/hammas',
     github: 'https://github.com/hammas',
-    achievements: ['Flutter Certified Developer', 'Mobile App Expert', 'FSC Top Performer'],
     fullBio: 'Hammas is a dedicated Flutter developer with a strong background in mobile app development. He combines his technical expertise with excellent teaching skills to help FSC students excel in their studies. His experience in building cross-platform mobile applications using Flutter makes him a valuable instructor for students interested in mobile development.',
   },
 ];

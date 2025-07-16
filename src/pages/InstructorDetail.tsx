@@ -134,19 +134,12 @@ const InstructorDetail: React.FC = () => {
                     <div className="font-semibold text-gray-900">Specializations</div>
                     <div className="text-sm text-gray-600">{instructor.specializations.length} areas</div>
                   </div>
-                  <div className="bg-gradient-secondary p-4 rounded-lg text-center">
-                    <TrophyIcon className="h-8 w-8 text-primary-600 mx-auto mb-2" />
-                    <div className="font-semibold text-gray-900">Achievements</div>
-                    <div className="text-sm text-gray-600">{instructor.achievements?.length || 0} awards</div>
-                  </div>
                 </div>
                 
                 {/* About */}
                 <div>
                   <h2 className="font-heading text-2xl font-bold text-gray-900 mb-4">About</h2>
-                  <p className="text-gray-700 leading-relaxed">
-                    {instructor.fullBio}
-                  </p>
+                  <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: instructor.fullBio || '' }} />
                 </div>
               </div>
             </div>
@@ -166,7 +159,18 @@ const InstructorDetail: React.FC = () => {
                   Education
                 </h3>
                 <div className="bg-gradient-secondary p-6 rounded-lg">
-                  <p className="text-gray-700 font-medium">{instructor.education}</p>
+                  {Array.isArray(instructor.education) ? (
+                    <ul className="space-y-2">
+                      {instructor.education.map((edu, idx) => (
+                        <li key={idx} className="text-gray-700 font-medium flex items-start">
+                          <span className="inline-block w-2 h-2 bg-primary-600 rounded-full mt-2 mr-3"></span>
+                          <span>{edu}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-gray-700 font-medium">{instructor.education}</p>
+                  )}
                 </div>
               </div>
               
@@ -181,7 +185,7 @@ const InstructorDetail: React.FC = () => {
               </div>
             </div>
             
-            {/* Specializations & Achievements */}
+            {/* Specializations */}
             <div className="space-y-8">
               <div>
                 <h3 className="font-heading text-xl font-bold text-gray-900 mb-4">Specializations</h3>
@@ -192,24 +196,6 @@ const InstructorDetail: React.FC = () => {
                       className="bg-white border border-primary-200 px-4 py-3 rounded-lg text-center font-medium text-primary-700 hover:bg-primary-50 transition-all duration-300 scale-hover"
                     >
                       {spec}
-                    </div>
-                  ))}
-                </div>
-              </div>
-              
-              <div>
-                <h3 className="font-heading text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <TrophyIcon className="h-6 w-6 text-primary-600 mr-2" />
-                  Achievements
-                </h3>
-                <div className="space-y-3">
-                  {instructor.achievements?.map((achievement, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center bg-gradient-secondary p-4 rounded-lg"
-                    >
-                      <div className="w-2 h-2 bg-primary-600 rounded-full mr-3"></div>
-                      <span className="text-gray-700 font-medium">{achievement}</span>
                     </div>
                   ))}
                 </div>

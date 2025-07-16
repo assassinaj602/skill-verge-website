@@ -63,12 +63,12 @@ const InstructorCard: React.FC<InstructorCardProps> = ({ instructor }) => {
           </div>
         </div>
 
-        {/* Contact Button */}
+        {/* See Details Button */}
         <Link
           to={`/instructor/${instructor.id}`}
           className="w-full inline-block bg-gradient-primary text-white py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300 group-hover:scale-105 text-center btn-animate ripple-effect"
         >
-          Contact Instructor
+          See Details
         </Link>
       </div>
     </div>
