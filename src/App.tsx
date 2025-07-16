@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/skill-verge-website">
+    <Router basename={import.meta.env.DEV ? "/" : "/skill-verge-website"}>
       <div className="App">
         <Navbar />
         <main>
