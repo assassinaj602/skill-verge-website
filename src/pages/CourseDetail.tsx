@@ -92,13 +92,23 @@ const CourseDetail: React.FC = () => {
             
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="text-center mb-6">
-                <div className="text-3xl font-bold text-gray-900 mb-2">
-                  {course.monthlyFeePKR} PKR
-                  <span className="text-lg font-normal text-gray-600">/month</span>
-                </div>
-                <div className="text-gray-600">
-                  or ${course.monthlyFeeUSD} USD/month
-                </div>
+                {course.discountedPricePKR ? (
+                  <>
+                    <div className="text-lg text-gray-500 line-through mb-1">Was {course.monthlyFeePKR} PKR</div>
+                    <div className="text-3xl font-bold text-primary-600 mb-2">Now {course.discountedPricePKR} PKR<span className="text-lg font-normal text-gray-600">/month</span></div>
+                    <div className="text-sm text-gray-600 mb-2">(~${(course.discountedPricePKR / 285).toFixed(2)} USD)</div>
+                  </>
+                ) : (
+                  <>
+                    <div className="text-3xl font-bold text-gray-900 mb-2">
+                      {course.monthlyFeePKR} PKR
+                      <span className="text-lg font-normal text-gray-600">/month</span>
+                    </div>
+                    <div className="text-gray-600">
+                      or ${course.monthlyFeeUSD} USD/month
+                    </div>
+                  </>
+                )}
               </div>
               
               <div className="space-y-4">

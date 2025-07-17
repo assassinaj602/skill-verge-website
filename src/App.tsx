@@ -11,6 +11,7 @@ import ScrollToTop from './hooks/ScrollToTop';
 import CourseDetail from './pages/CourseDetail';
 import InstructorDetail from './pages/InstructorDetail';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/course/:courseId" element={<CourseDetail />} />
             <Route path="/instructor/:instructorId" element={<InstructorDetail />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />

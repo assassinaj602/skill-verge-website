@@ -5,6 +5,7 @@ export interface Course {
   icon: string;
   description: string;
   monthlyFeePKR: number;
+  discountedPricePKR?: number;
   monthlyFeeUSD?: number;
   duration: string;
   mode: 'online' | 'offline' | 'hybrid';

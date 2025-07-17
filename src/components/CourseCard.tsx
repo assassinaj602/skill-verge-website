@@ -64,13 +64,21 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
               <span className="font-semibold text-gray-900">Monthly Fee</span>
             </div>
             <div className="text-right">
-              <div className="font-bold text-lg text-primary-600">
-                {course.monthlyFeePKR} PKR
-              </div>
-              {course.monthlyFeeUSD && (
-                <div className="text-sm text-gray-600">
-                  ${course.monthlyFeeUSD} USD
-                </div>
+              {course.discountedPricePKR ? (
+                <>
+                  <div className="text-sm text-gray-500 line-through">Was {course.monthlyFeePKR} PKR</div>
+                  <div className="font-bold text-xl text-primary-600">Now {course.discountedPricePKR} PKR</div>
+                  <div className="text-xs text-gray-600">(~${(course.discountedPricePKR / 285).toFixed(2)} USD)</div>
+                </>
+              ) : (
+                <>
+                  <div className="font-bold text-lg text-primary-600">{course.monthlyFeePKR} PKR</div>
+                  {course.monthlyFeeUSD && (
+                    <div className="text-sm text-gray-600">
+                      ${course.monthlyFeeUSD} USD
+                    </div>
+                  )}
+                </>
               )}
             </div>
           </div>

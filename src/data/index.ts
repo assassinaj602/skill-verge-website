@@ -8,85 +8,98 @@ export const instructors: Instructor[] = [
   {
     id: '1',
     name: 'Zain Tahir',
-    title: 'Senior Computer Science Instructor',
-    specializations: ['O/A Level Computer Science', 'Python Programming', 'Canva Design'],
+    title: 'Flutter Developer | Python Enthusiast | UI/UX Designer',
+    specializations: ['Flutter', 'Python', 'UI/UX Design'],
     avatar: zainImg,
-    bio: 'Expert in O/A Level Computer Science with extensive experience in Python programming and digital design using Canva.',
-    experience: '5+ years teaching experience',
+    bio: `Flutter Developer with a passion for Python and UI/UX design. Experienced in building apps from To-Do Lists to AI Chatbots. Active in AICP, Umeed-e-Subh, MLSA, and QDS.`,
+    experience: '2 years teaching experience',
     email: 'zain@skillverge.com',
-    education: 'BS Computer Science, University of Engineering & Technology Taxila',
+    education: 'BS CS',
     linkedin: 'https://linkedin.com/in/zaintahir',
-    fullBio: 'Zain Tahir is a passionate computer science educator with over 5 years of teaching experience. He specializes in O/A Level Computer Science and has helped hundreds of students achieve excellent results. His expertise in Python programming and Canva design makes him a versatile instructor who can teach both academic and practical skills.',
-  },
-  {
-    id: '2',
-    name: 'Saad Naseer',
-    title: 'MS Office Specialist',
-    specializations: ['MS Office Suite', 'Excel Advanced', 'PowerPoint', 'Data Analysis'],
-    avatar: naseerImg,
-    bio: 'Microsoft Office specialist with comprehensive knowledge of all Office applications and advanced data analysis techniques.',
-    experience: '4+ years professional experience',
-    email: 'saad@skillverge.com',
-    education: 'BS Business Administration, University of Engineering & Technology Taxila',
-    linkedin: 'https://linkedin.com/in/saadnaseer',
-    fullBio: 'Saad Naseer is a Microsoft Office specialist with extensive experience in business applications. He has worked with numerous organizations to improve their productivity through efficient use of Office tools. His expertise in Excel and data analysis makes him the go-to instructor for professional Office skills.',
-  },
-  {
-    id: '3',
-    name: 'Muhammad Assad Ullah',
-    title: 'App, Web Developer & ICS Instructor',
-    specializations: ['Frontend Development', 'Prompt Engineering', 'ICS Computer Science', 'React.js', 'Flutter', 'Mobile App Development'],
-    avatar: assadImg,
-    bio: 'Full-stack developer specializing in frontend technologies and modern web development practices, also teaching ICS Computer Science.',
-    experience: '3+ years development and teaching experience',
-    email: 'asadullahaj602@gmail.com',
-    education: [
-      'Bachelors in Computer Science, University of Engineering and Technology Taxila (2023-2027)',
-      'ICS, Punjab College Muzaffargarh (2021-2023), 3rd Position in DGK Board'
-    ],
-    linkedin: 'https://www.linkedin.com/in/muhammad-assadullah/',
-    github: 'https://github.com/assassinaj602',
-    notableProjects: [
-      {
-        name: 'Study Buddy AI',
-        url: 'https://github.com/assassinaj602/study-buddy-ai',
-        description: 'Multi-modal AI academic assistant with file processing capabilities.'
-      },
-      {
-        name: 'HackShield Academy',
-        url: 'https://github.com/assassinaj602/hackshield-academy',
-        description: 'Interactive cybersecurity education platform with phishing detection games, password builders, and security quizzes.'
-      },
-      {
-        name: 'UrbanTrim',
-        url: 'https://github.com/assassinaj602/urbantrim',
-        description: 'UrbanTrim project.'
-      }
-    ],
     fullBio: `
 <strong>Introduction:</strong><br/>
-Muhammad Assad Ullah is a skilled full-stack <span class="font-bold text-primary-600">Flutter</span> <span class="font-bold text-primary-600">app and web developer</span> with expertise in modern web technologies and mobile app development. He specializes in <span class="font-bold text-primary-600">Flutter development</span> and <span class="font-bold text-primary-600">frontend web development</span>, and has extensive experience in prompt engineering. His passion for teaching has led him to become an excellent ICS Computer Science instructor, helping students bridge the gap between academic knowledge and practical skills.<br/><br/>
-<strong>Teaching Philosophy:</strong><br/>
-I use AI in my teachings to make learning faster and modern, ensuring students are prepared for the future of technology.<br/><br/>
-<strong>Fun Facts & Interests:</strong><br/>
-I love coding, anime, movies, reading (mangas, novels), video games, and sports.<br/><br/>
-<strong>Favorite Quote:</strong><br/>
-"Life has no CTRL + Z"
+I’m a Flutter Developer with a passion for Python and UI/UX design using Figma and Canva. I've worked on various Flutter apps, from basic tools like a To-Do List and Pomodoro Timer to advanced API-based apps like a Currency Exchange App and AI Chatbot. I’ve also contributed as a designer and educator in university societies like AICP, Umeed-e-Subh, MLSA, and QDS. I’m eager to build innovative, user-friendly apps and grow in the app development and design industry.<br/><br/>
+<strong>Qualification:</strong><br/>
+BS CS<br/><br/>
+<strong>Experience:</strong><br/>
+2 years teaching experience<br/><br/>
+<strong>Skills:</strong><br/>
+Python, Dart, Flutter, UI/UX designing, Canva<br/><br/>
+<strong>Interests/Hobbies:</strong><br/>
+Watching YouTube
 `,
   },
   {
     id: '4',
     name: 'Hammas',
-    title: 'Flutter Developer & FSC Instructor',
-    specializations: ['Flutter Development', 'Mobile App Development', 'FSC Subjects', 'Dart Programming'],
+    title: 'Flutter Developer | UI/UX Designer',
+    specializations: ['Flutter', 'Dart', 'UI/UX Design'],
     avatar: hammasImg,
-    bio: 'Mobile app developer with expertise in Flutter framework and comprehensive knowledge of FSC level subjects.',
-    experience: '3+ years development experience',
+    bio: `Flutter Developer with a passion for Python and UI/UX design. Experienced in building apps from To-Do Lists to AI Chatbots. Active in UMC, Umeed-e-Subh, MLSA, and QDS.`,
+    experience: '2 years teaching experience',
     email: 'hammas@skillverge.com',
-    education: 'BS Computer Science, University of Engineering & Technology Taxila',
+    education: 'BS CS',
     linkedin: 'https://linkedin.com/in/hammas',
     github: 'https://github.com/hammas',
-    fullBio: 'Hammas is a dedicated Flutter developer with a strong background in mobile app development. He combines his technical expertise with excellent teaching skills to help FSC students excel in their studies. His experience in building cross-platform mobile applications using Flutter makes him a valuable instructor for students interested in mobile development.',
+    fullBio: `
+<strong>Introduction:</strong><br/>
+I’m a Flutter Developer with a passion for Python and UI/UX design using Figma and Canva. I've worked on various Flutter apps, from basic tools like a To-Do List and Pomodoro Timer to advanced API-based apps like a Currency Exchange App and AI Chatbot. I’ve also contributed as a designer and educator in university societies like UMC, Umeed-e-Subh, MLSA, and QDS. I’m eager to build innovative, user-friendly apps and grow in the app development.<br/><br/>
+<strong>Qualification:</strong><br/>
+BS CS<br/><br/>
+<strong>Experience:</strong><br/>
+2 years teaching experience<br/><br/>
+<strong>Skills:</strong><br/>
+Dart, Flutter, UI/UX designing<br/><br/>
+<strong>Interests/Hobbies:</strong><br/>
+Watching Wrestling, movies
+`,
+  },
+  {
+    id: '3',
+    name: 'Muhammad Assad Ullah',
+    title: 'App & Web Developer | ICS Instructor | AI-Integrated Teaching Specialist',
+    specializations: ['Flutter', 'Frontend Development', 'Prompt Engineering', 'ICS Computer Science', 'UI/UX Design', 'AI Tools'],
+    avatar: assadImg,
+    bio: ` 2+ Years Experience\n\nI'm a passionate and skilled full stack Flutter app and web developer with a strong foundation in modern front end technologies, mobile app development, and prompt engineering. With over 2 years of hands-on development and teaching experience, I blend technical expertise with a unique ability to teach complex concepts in a simple, engaging way.\n\nAs an ICS Computer Science instructor, I focus on bridging the gap between academic concepts and real-world application — empowering students not only to score well but to build confidently using modern tools.`,
+    experience: '2+ years development and teaching experience',
+    email: 'asadullahaj602@gmail.com',
+    education: [
+      'BS Computer Science, University of Engineering & Technology, Taxila (2023–2027)',
+      'ICS (Computer Science), Punjab College, Muzaffargarh (2021–2023)',
+      '▫️ 3rd Position – DG Khan Board'
+    ],
+    linkedin: 'https://www.linkedin.com/in/muhammad-assadullah/',
+    github: 'https://github.com/assassinaj602',
+    fullBio: `
+<strong>🧠 About Me</strong><br/>
+I'm a passionate and skilled full stack Flutter app and web developer with a strong foundation in modern front-end technologies, mobile app development, and prompt engineering. With over 2 years of hands on development and teaching experience, I blend technical expertise with a unique ability to teach complex concepts in a simple, engaging way.<br/><br/>
+As an ICS Computer Science instructor, I focus on bridging the gap between academic concepts and real world application empowering students not only to score well but to build confidently using modern tools.<br/><br/>
+<strong>🎓 Education</strong><br/>
+BS Computer Science, University of Engineering & Technology, Taxila (2023–2027)<br/>
+ICS (Computer Science), Punjab College, Muzaffargarh (2021–2023)<br/>
+▫️ 3rd Position – DG Khan Board<br/><br/>
+<strong>💼 Current Roles</strong><br/>
+App Developer (Flutter)<br/>
+Web Developer (React & Frontend Tech)<br/>
+ICS Computer Science Instructor<br/><br/>
+<strong>🔧 Specializations</strong><br/>
+Flutter & Dart Mobile Development<br/>
+Frontend Web Development (HTML, CSS, JS, Tailwind, React.js)<br/>
+Prompt Engineering for AI Tools<br/>
+ICS Computer Science (Punjab Textbook, Practical Guidance)<br/>
+UI/UX Implementation & Design Thinking<br/>
+AI-powered Learning Tools Integration<br/><br/>
+<strong>🎯 Teaching Philosophy</strong><br/>
+“Education must evolve with technology.”<br/>
+I incorporate AI tools like ChatGPT and visual explainers to simplify learning, encourage curiosity, and make my students future-ready for a tech-driven world.<br/><br/>
+<strong>🧩 Fun Facts & Interests</strong><br/>
+Anime lover, gamer, and movie geek<br/>
+Enjoy reading mangas, tech blogs, and novels<br/>
+Sports enthusiast (especially football and cricket)<br/>
+Lifelong learner and code explorer<br/><br/>
+<strong>💬 Favorite Quote</strong><br/>
+“Life has no CTRL + Z” every decision shapes who we become.
+`,
   },
 ];
 
@@ -97,9 +110,10 @@ export const skillCourses: Course[] = [
     category: 'skill',
     icon: '🐍',
     description: 'Learn Python from basics to advanced concepts including data structures, algorithms, and real-world projects.',
-    monthlyFeePKR: 4000,
+    monthlyFeePKR: 1500,
+    discountedPricePKR: 500,
     monthlyFeeUSD: 15,
-    duration: '3 months',
+    duration: '2 months',
     mode: 'online',
     instructor: 'Zain Tahir',
     prerequisites: 'Basic computer knowledge',
@@ -111,9 +125,10 @@ export const skillCourses: Course[] = [
     category: 'skill',
     icon: '🌐',
     description: 'Learn web development with the help of AI tools to enhance your skills and code efficiently. Complete web development course covering HTML, CSS, JavaScript, React, and modern web technologies.',
-    monthlyFeePKR: 5000,
-    monthlyFeeUSD: 18,
-    duration: '4 months',
+    monthlyFeePKR: 1500,
+    discountedPricePKR: 500,
+    monthlyFeeUSD: 15,
+    duration: '2 months',
     mode: 'online',
     instructor: 'Muhammad Assad Ullah',
     prerequisites: 'Basic computer knowledge',
@@ -125,8 +140,9 @@ export const skillCourses: Course[] = [
     category: 'skill',
     icon: '🤖',
     description: 'Master the art of AI prompt engineering to maximize productivity and efficiency in your work. Learn to create effective prompts for various AI tools and applications.',
-    monthlyFeePKR: 500,
-    monthlyFeeUSD: 2,
+    monthlyFeePKR: 1000,
+    discountedPricePKR: 200,
+    monthlyFeeUSD: 5,
     duration: '1 month',
     mode: 'online',
     instructor: 'Muhammad Assad Ullah',
@@ -139,9 +155,10 @@ export const skillCourses: Course[] = [
     category: 'skill',
     icon: '🎨',
     description: 'Master graphic design with Canva, create professional designs, social media graphics, and marketing materials.',
-    monthlyFeePKR: 3000,
-    monthlyFeeUSD: 12,
-    duration: '2 months',
+    monthlyFeePKR: 1000,
+    discountedPricePKR: 200,
+    monthlyFeeUSD: 5,
+    duration: '1 months',
     mode: 'online',
     instructor: 'Zain Tahir',
     prerequisites: 'None',
@@ -153,27 +170,14 @@ export const skillCourses: Course[] = [
     category: 'skill',
     icon: '📱',
     description: 'Build cross-platform mobile applications using Flutter framework and Dart programming language.',
-    monthlyFeePKR: 5500,
-    monthlyFeeUSD: 20,
-    duration: '4 months',
+    monthlyFeePKR: 1500,
+    discountedPricePKR: 500,
+    monthlyFeeUSD: 15,
+    duration: '2 months',
     mode: 'online',
     instructor: 'Hammas',
     prerequisites: 'Basic programming knowledge',
     level: 'intermediate',
-  },
-  {
-    id: 'ms-office',
-    title: 'MS Office Suite',
-    category: 'skill',
-    icon: '💼',
-    description: 'Complete Microsoft Office training including Word, Excel, PowerPoint, and advanced data analysis.',
-    monthlyFeePKR: 3500,
-    monthlyFeeUSD: 13,
-    duration: '2 months',
-    mode: 'online',
-    instructor: 'Saad Naseer',
-    prerequisites: 'Basic computer knowledge',
-    level: 'beginner',
   },
 ];
 
@@ -184,7 +188,7 @@ export const academicCourses: Course[] = [
     category: 'academic',
     icon: '🎓',
     description: 'Complete O Level Computer Science course covering all syllabus topics with practical programming.',
-    monthlyFeePKR: 3000,
+    monthlyFeePKR: 1500,
     monthlyFeeUSD: 12,
     duration: '12 months',
     mode: 'online',
@@ -198,7 +202,7 @@ export const academicCourses: Course[] = [
     category: 'academic',
     icon: '🎓',
     description: 'Advanced A Level Computer Science course with in-depth programming and computer systems knowledge.',
-    monthlyFeePKR: 4000,
+    monthlyFeePKR: 2000,
     monthlyFeeUSD: 15,
     duration: '12 months',
     mode: 'online',
@@ -212,7 +216,7 @@ export const academicCourses: Course[] = [
     category: 'academic',
     icon: '📚',
     description: 'Comprehensive FSC level subjects including Mathematics, Physics, Chemistry, and Computer Science.',
-    monthlyFeePKR: 3500,
+    monthlyFeePKR: 1500,
     monthlyFeeUSD: 13,
     duration: '12 months',
     mode: 'online',
@@ -226,7 +230,7 @@ export const academicCourses: Course[] = [
     category: 'academic',
     icon: '💻',
     description: 'ICS Computer Science course covering programming fundamentals, data structures, and software development.',
-    monthlyFeePKR: 3500,
+    monthlyFeePKR: 1500,
     monthlyFeeUSD: 13,
     duration: '12 months',
     mode: 'online',
