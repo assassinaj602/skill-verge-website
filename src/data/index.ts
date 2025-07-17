@@ -1,6 +1,5 @@
 import type { Course, Instructor, Testimonial, AcademicFee } from '../types';
 import zainImg from '../assets/zain.jpg';
-import naseerImg from '../assets/naseer.jpg';
 import assadImg from '../assets/assad.jpg';
 import hammasImg from '../assets/hammas.jpg';
 

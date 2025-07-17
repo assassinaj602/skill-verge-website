@@ -31,7 +31,7 @@ const Faculty: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center">
             {[instructors.find(i => i.id === '1'), instructors.find(i => i.id === '3'), instructors.find(i => i.id === '4')].map(
-              (instructor, idx) => instructor && <InstructorCard key={instructor.id} instructor={instructor} />
+              (instructor) => instructor && <InstructorCard key={instructor.id} instructor={instructor} />
             )}
           </div>
         </div>
